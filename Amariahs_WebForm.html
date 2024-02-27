@@ -1,0 +1,146 @@
+<!--
+Amariah Robinson
+05/02/2023
+Project Part 2
+WEB 110-N801
+Professor Neequaye
+-->
+
+<!-- This HTML document will be used as my web form for my website!-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amariah's Website Survey</title>
+    <meta charset = "utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+
+    <a><link href="Amariah_Home.html"/></a>
+    <a><link href="About_Me.html"></a>
+    <link href="Amariahs_Base.css" rel="stylesheet" />
+    <link href="Amariahs_Styles2.css" rel="stylesheet" />
+    <a><link href="Amariahs_School"></a>
+    <script src="Amariahs_Script.js" defer></script>
+    <!-- don't forget to insert the script file you create later!!!-->
+
+</head>
+
+<body>
+    <header>
+        <!-- Used to provide links back to the other web pages-->
+        <nav>
+            <ul>
+                <li><a href="Amariah_Home.html">Home</a></li>
+                <li><a href="About_Me.html">About Me</a></li>
+                <li><a href="Amariahs_School.html">Amariah's School Life</a></li>
+            </ul>
+        </nav>
+        <br /><br /><br />
+        <img src="C:\Users\marih\Pictures\Amariah_Autumn.JPEG" alt="" />
+    </header>
+    <section>
+        <h1>Website Survey</h1>
+        <p>Thank you for taking my website survey!<br /> Your response helps me to become
+            a better programmer <br />along with how to update my website to make it looks more
+            inviting and attention grabbing!
+        </p>
+        <p>Required input are marked by an asterisk (*)</p>
+
+        <form id="survey" action="file:///C:/Users/marih/Downloads/Amariahs_WebForm.html" method="post">
+            <!-- Create and format a form with multiple field sets-->
+            <form>
+            <fieldset id="userInfo">
+                <legend>User Information</legend>
+
+                <!--Include at least one input that is set for a mobile keyboard type (e.g. number, email, url, etc.)-->
+                <!-- Validate data with by having certain fields required-->
+                <div class="Info">
+                <label for="name">Name*</label>
+                <input name="Name" id="Name" type="text" placeholder="First Name" required />
+                </div>
+
+                <div class="Info">
+                    <label for="date">Date*</label>
+                    <input date="Date" id="Date" type="text" placeholder="Date" required />
+                </div>
+
+                <div class="Info">
+                    <label for="email">Email*</label>
+                    <input email="Email" id="Email" type="email" placeholder="example@gmail.com" required />
+                </div>
+            </fieldset>
+
+                <br />
+                <fieldset id="Responses">
+                <!-- Create a selection list-->
+                <div class="Info">
+                    <label for="colorOptions">What color would you recommend the background be?</label>
+                    <select name="userOptions" id="colorOptions">
+                        <datalist id="colorOptions">
+                        <option value=""></option>
+                        <option value="Pastel Red">Pastel Red</option>
+                        <option value="Pastel Orange">Pastel Orange</option>
+                        <option value="Pastel Yellow">Pastel Yellow</option>
+                        <option value="Pastel Green">Pastel Green</option>
+                        <option value="Pastel Blue">Pastel Blue</option>
+                        <option value="Pastel Purple">Pastel Purple</option>
+                        <option value="Pastel Pink">Pastel Pink</option>
+                        <option value="White">White</option>
+                        <option value="Light Gray">Light Gray</option>
+                    </datalist>
+                </select>
+                </div>
+
+                <!-- Include the following input types: text, date/time, radio buttons
+                     spinners, range sliders, and check boxes-->
+                <div class="buttons">
+                    <legend><br />Please check off what aspects of my website that you've seen!</legend>
+                    <label for="Pictures">Pictures</label>
+                    <input name="checkBoxes" value="Pictures" type="checkbox" />
+                    <br />
+                    <label for="Descriptions">Descriptions</label>
+                    <input name="checkBoxes" value="Descriptions" type="checkbox" />
+                    <br />
+                    <label for="Web Links">Different Web Links</label>
+                    <input name="checkBoxes" value="Web Links" type="checkbox" />
+                    <br />
+                    <label for="About Me">About Me Page</label>
+                    <input name="checkBoxes" value="About Me" type="checkbox" />
+                </div>
+
+                <div class="spinner">
+                    <label for="spinner">How many times did you view my website?</label>
+                    <input name="spinner" id="tryASpin" type="number" value="" step="1" min="0" max="10" />
+                </div>
+
+                <div class="Info">
+                    <label for="rangeBox"><br />Rate My Website Overall!<br /> (0 = Needs Improvement; 10= Fantastic)</label><br />
+                    0
+                    <input name="ratings" id="rangeBox" type="range" value="5" step="1" min="0" max="10" />
+                    10
+                </div>
+                <!-- Create and format a text area -->
+                <label for="textarea">Tell me more about what improvements my website should have!!<br /></label>
+                <textarea name="textarea" id="textarea"></textarea>
+
+                <!-- Create a submit and cancel/reset button-->
+                <div class="buttons">
+                    <input type="submit" value="Submit My Response" />
+                    <input type="reset" value="Cancel" />
+                </div>
+
+                <!-- used for Javascript countdown-->
+                <div id="todaysDate">05/07/2023<br />17:15:00 p.m.</div>
+
+                <div id="countdown">
+                    <div><span id="days">239</span><br />Days</div>
+                    <div><span id="hours">6</span><br />Hours</div>
+                    <div><span id="minutes">45</span><br />Minutes</div>
+                    <div><span id="seconds">00</span><br />Seconds</div>
+                 </div>
+                </fieldset>
+            </form>
+        </form>
+    </section>
+
+</body>
