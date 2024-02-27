@@ -1,0 +1,93 @@
+/*  Amariah Robinson
+    03/23/2023
+    WEB 110-N801
+    Professor Neequaye
+    Project Part 1
+*/
+
+/* This CSS file will format different elements */
+@charset "utf-8";
+
+ img {
+    display: inline-grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    float: none;
+    position: relative;
+}
+
+header {
+    color: plum;
+    background: rgb(248, 247, 223);
+}
+
+header img {
+    display: center;
+}
+
+h1 {
+    color: plum; 
+    font-size: 18pt;
+    text-align: center;   
+}
+
+p {
+    display: block;
+    color: plum;
+    text-decoration: dashed;
+    background: rgb(248, 247, 223);
+}
+
+footer {
+    color: plum;
+}
+
+div#countdown {
+    display: flex;
+    color: plum;
+    /*flex-flow: row nowrap;
+    position: relative; */
+}
+
+div#todaysDate {
+    display: flex;
+    color: plum;
+    flex-flow: row wrap;
+    position: relative;
+    padding-left: 40px;
+    
+}
+
+/* Validation Styles */
+/* Use the focus pseudo class to format valid and invalid selected boxes */
+
+div:focus, select:focus, textarea:focus {
+    background-color: white;
+}
+
+div#name:focus:valid, div#date:focus:valid, div#email:focus:valid {
+    background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+div#name:focus:invalid, div#date:focus:invalid, div#email:focus:invalid {
+    background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
+
+/* Formatting for different devices */
+
+/* Mobile Styles: 0 to 480px */
+@media only screen and (max-width: 480px) {
+   body, div#Info {
+    display: flex;
+    flex-flow: row wrap;
+   }
+}
+/* Tablet and Desktop Styles: 481px and greater */
+
+@media only screen and (min-width: 481px) {
+    nav.horizontal ul {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
