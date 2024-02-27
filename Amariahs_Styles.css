@@ -1,0 +1,100 @@
+/*
+    Amariah Robinson 
+    03/22/2023
+    Project Part 1
+    WEB 110-N801
+    Professor Neequaye
+*/
+
+/*
+    This CSS file will be my Styles file!
+*/
+
+/* HTML and Body Styles */
+
+html {
+    background: url(curvy_brown.jpg) center center / cover no-repeat fixed rgb(255,253,208);
+    height: 100%;
+    font-family: "Calibri", Arial, sans-serif;
+    font-size: 12px; 
+}
+
+/* Body Header Styles */
+
+body {
+    background: rgb(209, 235, 255);
+    box-shadow: rgb(51,51,51);
+    margin: 5px;
+}
+
+body header {
+    background: rgb(209, 235, 255);
+    box-shadow: rgb(51, 51, 51);
+}
+
+body header img {
+    display: block;
+    width: 100%;
+}
+
+
+/* Horizontal Navigation Styles */
+
+nav.horizontal {
+    background-color: rgb(209, 235, 255);
+    min-height: 2em;
+}
+
+nav.horizontal li {
+    color: rgb(244, 194, 237);
+    font-size: 1em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+nav.horizontal a:hover {
+    color: rgb(244, 194, 237);
+}
+
+nav.horizontal a:visited {
+    color: rgb(172, 163, 252);
+}
+
+
+/* Footer Styles */
+
+footer {
+    display: block;
+    background: rgb(206, 255, 218);
+}
+
+/* Article Styles */
+
+section#aboutme {
+    display: block;
+    background-color: rgb(233, 223, 251);
+}
+
+/* Page Box Styles */
+
+@page {
+    size: 8.5in 11in;
+    margin: 1in;
+}
+
+/* Mobile, Tablet, and Laptop Styles */
+
+@media all and (min-width: 480px) {
+    nav.horizontal {
+        font-size: 1em;
+        line-height: 2em;
+    }
+}
+
+@media all and (min-width: 481px) {
+    ul.About_Me > li {
+        float: center;
+        position: relative;
+        width: 20%;
+    }
+}
