@@ -1,0 +1,140 @@
+/* Amariah Robinson 
+     03/23/2023
+     WEB 110-N801
+     Professor Neequaye
+
+     Project Part 1
+*/
+
+/* This file contains the base styles used by all pages in my website */
+@charset "utf-8";
+
+article, aside, details, dl, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+/* Default colors, margins, and sizing */
+
+html {
+    background: rgb(248, 247, 223);
+    font-size: 18px;
+    font-family: "Calibri", Calibri, sans-serif;
+}
+
+body {
+    font-size: 18px;
+    margin: 1in;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+    
+}
+
+body header {
+    background: rgb(248, 247, 223);
+    box-shadow: rgb(51, 51, 51);
+}
+
+textarea {
+    block-size: 100px;
+    width: 1000px;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontal {
+    background-color:rgb(248, 247, 223);
+    min-height: 2em;
+}
+
+nav.horizontal li {
+    color: rgb(248, 247, 223);
+    font-size: 1em;
+    line-height: 1em;
+    text-transform: none;
+    overflow: auto;
+    order: 4;
+}
+
+/* Footer Styles */
+
+footer {
+    display: block;
+    text-align: center;
+}
+
+/* Hypertext Links */
+a {
+    color: #FFE2FE;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+    color: #A8B1D8
+}
+
+a:hover {
+    color: #FFE2FE
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+/* Default font styles */
+
+abbr[header] {
+    border-bottom: 2px dotted;
+}
+
+/* Default list styles */
+
+p {
+    display: block;
+    box-sizing: border-box;
+}
+
+dd {
+    margin: 20px;
+}
+
+li {
+    display: inline;
+    float: left;
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 5px;
+}
+
+/* Default style for images and media */
+
+img {
+    display: block;
+    box-sizing: border-box;
+    float: none;
+    background:rgb(248, 247, 223);
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+/* page layout */
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+}
+
+/* For all screens that are 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+}
+
+
+
+
+
+
